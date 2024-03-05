@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham Das's Portfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+    <style>
+        .navbar {
+            background-color: rgb(35, 131, 79);
+            border-radius: 40px;
+        }
+
+        .navbar li {
+            color: white;
+            list-style: none;
+            float: left;
+            margin: 20px 20px;
+            font-size: 18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 3px;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar li a:hover {
+            color: aqua;
+            transition: color 0.3s ease;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+            
+        }
+
+        .navbar input {
+
+            border-radius: 14px;
+            padding: 3px 17px;
+            height: 23px;
+            width: 200px;
+            border: none;
+
+        }
+        
+
+        
+        body{
+            background-color:rgb(35, 31, 50);
+        }
+        .main img{
+            width: 210px;
+            border: 1px solid yellow;
+            border-radius: 100%;
+        
+            margin-left: 139px;
+            margin-top: -72px;   
+            }
+            .main h1{
+                color: white;
+                font-size: 27px;
+                margin-top: 40px;
+                margin-left: 432px;
+            }
+            .main h1 span{
+                color: yellow;
+                font-style: italic;
+                font-size: 34px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        .content p{
+            color: white;
+            justify-content: center;
+            margin-left: 380px;
+            text-align: center;
+            
+            
+        }
+        .content h1{
+            color: white;
+
+        }
+        .content h1 span{
+            color: yellow;
+            text-decoration: underline;
+            
+        }
+        .content h1{
+            margin-left: 540px;
+            margin-top: -130px;
+            
+        }
+        #para{
+            color: white;
+            margin-left: 460px;
+            margin-top: 40px;
+            font-size: 20px;
+            font-style: italic;
+
+        }
+
+
+
+
+
+        .guarantee{
+    margin-top: 170px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.guarantee .item{
+    background: #292b2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover{
+    border-color: #ffb742;
+}
+
+.guarantee .item .icon{
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .item:hover .icon{
+    background-color: #ffb742;
+}
+
+.guarantee .item .icon i{
+    font-size: 30px;
+}
+
+.guarantee .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3{
+    color: #ffb742;
+    font-size: 28px;
+}
+
+.guarantee .item .info p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.guarantee .item > i{
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.guarantee .item:hover > i{
+    color: #ffb742;
+}
+.btn-hire{
+    justify-content: center;
+    background: yellow;
+    color:black;
+    padding: 6px 30px;
+    font-size: 18px;
+    font-weight: 200;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 690px;
+    animation: colors 1s infinite;
+}
+
+@keyframes colors {
+
+    0%{
+        background-color: red;
+
+    }
+    20%{
+        background-color: orange;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: purple;
+    }
+    100%{
+        background-color: pink;
+    }
+    
+}
+.btn-hire:hover{
+    background: rgb(234, 234, 46);
+    border-color: #fff;
+}
+
+.about h3{
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* background: #1e172a; */
+    border: 1px solid transparent;
+    display: inline-flex;
+    color: #ffb742;
+    font-size: 35px;
+}
+
+.about p{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.about{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+#about-me{
+    margin-top: 19px;
+    
+
+}
+.skills h1{
+    color: #ffb742;
+    text-align: center;
+    
+}
+.skills p{
+    color: white;
+    text-align: center;
+
+}
+
+.skills .right{
+    width: 1508px;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills .right .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d7dfe9;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.box{
+    background:#ffb742;
+    display: block;
+    border-radius: 10px;
+   margin-left: 310px;
+   cursor: pointer;
+   width: 900px;
+   text-align: center;
+
+}
+.box:hover{
+    background-color:#f69d0e;
+}
+.box h2{
+    color:#111;
+    font-size: 28px;
+    font-style: italic;
+    font-weight:bold;
+}
+.box p{
+    font-size: 19px;
+    font-weight: 300;
+}
+.box .work-btn{
+    border-radius: 13px;
+    border: 2px solid black;
+    padding: 6px 30px;
+    cursor: pointer;
+    background-color: #ffb742;
+    margin-left: -3px;
+    margin-bottom: 10px
+    
+}
+.box .work-btn:hover{
+    background-color: white;
+    border: 1px solid transparent;
+}
+footer{
+    position: relative;
+    background: #1c1c1c;
+    padding: 80px 50px 40px;
+    margin-top: 100px;
+    height: 180px;
+}
+footer h2{
+    color: #f69d0e;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: -26px;
+}
+footer p{
+    color: #d7dfe9;
+    display: block;
+    margin-left: -20px;
+    margin-top: -10px;
+
+}
+    footer .footer-links li a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    footer li{
+        color: white;
+            list-style: none;
+            float: left;
+            margin: 20px 20px;
+            font-size: 18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 140px;
+            
+    
+    }
+    footer h3{
+        color: #f69d0e;
+        font-size: 24px;
+        margin-left: 600px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width: 767px) {
+html{font-size: 40%;}
+}
+ 
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+   html{font-size: 65%;}
+
+        
+}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+
+                <li> <a href="#home">Home</a></li>
+                <li><a href="#qualifications">Qualifications</a> </li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#SocialMediaHandels">Social Media Handels </a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            
+
+            </ul>
+            
+        </nav>
+
+        </div>
+    </header>
+    <div class="main">
+        <h1>Hello Everyone I am <span>Subham</span></h4>
+      <img id="dpp" src="img/Screenshot 2024-01-15 175701.png" alt="image">  
+      
+    </div>
+    <div class="content">
+        <h1>Full Stack <span>Web Developer</span></h1> 
+    </div>
+    <div id="para">
+        <p>I Design And Code Beautiful Simple Websites And I Love What I'm Doing!</p>
+    </div>
+
+
+
+    <div class="guarantee">
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-check-shield'></i>
+            </div>
+            <div class="info">
+                <h3>+1</h3>
+                <p>Years Of Experiences</p>
+            </div>
+            <i class='bx bx-chevron-right'></i>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-check-circle'></i>
+            </div>
+            <div class="info">
+                <h3>+5</h3>
+                <p>Completed Projects</p>
+            </div>
+            <i class='bx bx-chevron-right'></i>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-laugh'></i>
+            </div>
+            <div class="info">
+                <h3>+2</h3>
+                <p>Happy Clients</p>
+            </div>
+            <i class='bx bx-chevron-right'></i>
+        </div>
+    </div>
+
+
+
+    <div>
+        <button class="btn-hire">Hire Me</button>
+    
+    <script>document.getElementById('btn-hire').addEventListener('click', function() {
+        document.getElementById('myForm').style.display = 'block';
+      });</script>
+    </div>
+
+        <div class="about">
+            <h3 id="about-me">About Me</h3>
+            <p>I am Subham, a 19 Years old Boy Very Passionate about coding and website developmets and designs.Learning New Skills Every single Day and Polishing Known Skills. I will Work Hard for My dreams and I will Fullfil it At Any Cost. I got 93% in my 10th and 86.8% in 12th .at present i am persuing BTech.
+               A Long Way To Go. </p>
+            
+            </div>
+            &nbsp;&nbsp;
+            <div class="skills">
+                <h1>My Skills</h1>
+                <p>I Am Good At HTML,CSS,JS,JAVA,C,C++ . I am Regularly Learning New Skills.</p>
+               
+               
+                <div class="skill-icon">  <div class="right">
+            <div class="item" id="html">
+                <i class='bx bxl-html5'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-css3'></i>
+            </div>
+            
+            <div class="item">
+                <i class='bx bxl-git'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-bootstrap'></i>
+            </div>
+            
+            
+            <div class="item">
+                <i class='bx bxl-tailwind-css'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-javascript'></i>
+                </div>
+                
+                
+                <div class="item">
+                <i class='bx bxl-java'></i>
+                </div>
+
+                <div class="item">
+                <i class='bx bxl-c-plus-plus'></i>
+                </div>
+            
+        </div>
+
+    </div>
+     </div>
+
+                &nbsp;&nbsp;
+
+              </div>
+
+
+
+
+
+
+              <div class="box"><h2>Wanna Work Together?</h2>
+                <p>Interested Working With Me? Let's Meet And Talk About That. Coffee Will be From My Pocket ;) </p>
+                <button class="work-btn">Let's Do That</button>
+              </div>
+
+
+              <footer class="footer">
+
+                <h2>Subham.</h2>
+                <p>Full stack Developer</p>
+
+
+               <h3>Useful Links</h3>
+               <div class="footer-links">
+                <ul>
+    
+                    <li> <a href="#home">Home</a></li>
+                    <li><a href="#qualifications">Qualifications</a> </li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul></div>
+
+
+
+              </footer>
+
+
+
+
+
+
+
+
+    
+
+
+
+</body>
+
+</html>
